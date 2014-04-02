@@ -8,8 +8,8 @@ show_admin_bar('true');
 
 // Register Menus
 register_nav_menus( array(
-    'header' => __( 'Header Navigation', 'Framework' ),
-    'footer' => __( 'Footer Navigation', 'Framework' )
+    'header' => __( 'Header Navigation', 'vanilla' ),
+    'footer' => __( 'Footer Navigation', 'vanilla' )
 ) );
 
 // Remove nav classes, except for 'usefull classes'
