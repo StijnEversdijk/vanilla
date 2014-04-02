@@ -1,0 +1,10 @@
+/*
+Theme Name: Vanilla Framework
+Theme URI: Unknown
+Description: My Vanilla Framework for Wordpress Development Workflow in combination with Sass, Codekit and MAMP. Based on Pieter de Jong's Compass-Skeleton, which you can find on https://github.com/pieterdejong/Compass-Project
+Version: 0.1
+Author: Stijn Eversdijk
+Author URI: http://www.stijneversdijk.nl
+*/
+
+@import url('css/global.css');

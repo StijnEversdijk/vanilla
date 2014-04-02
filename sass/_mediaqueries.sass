@@ -1,0 +1,21 @@
+@mixin breakpoint($point)
+
+  @if $point == s
+    @media only screen and (max-width: 320px)
+      @content
+
+  @else if $point == m
+    @media only screen and (max-width: 480px)
+      @content
+
+  @else if $point == l
+    @media only screen and (max-width: 524px)
+      @content
+
+  @else if $point == xl
+    @media only screen and (max-width: 1024px)
+      @content
+
+  @else if $point == xxl
+    @media only screen and (min-width: 1025px)
+      @content
