@@ -1,0 +1,94 @@
+.filter-container
+  +clearfix
+  margin-top: 40px
+  margin-bottom: 60px
+
+.archive
+
+  .isotope
+    width: calc(100% + 40px)
+    +flexbox
+
+  .loop
+    display: block
+
+  .company
+    width: calc(100%/3 - 40px)
+    height: 300px
+    margin-bottom: 80px
+    margin-right: 40px
+
+    h3
+      margin-bottom: 2px
+
+  .cover-image
+    width: 100%
+    +background-size(cover)
+    background-position: center
+    height: 200px
+    +transition(all .2s ease-out)
+
+    &:hover
+      +opacity(0.6)
+
+  .inner
+    position: relative
+
+.ui-group
+  +clearfix
+
+  &:last-of-type
+    margin-top: 40px
+
+    .button-group button
+      +background-image-retina('filter-disabled', 'png', size)
+
+      &.is-checked
+        +background-image-retina('filter-active', 'png', size)
+
+.button-group
+  // +flexbox
+  // +justify-content(space-between)
+  // +flex-wrap(wrap)
+  width: 70%
+  float: right
+
+  button
+    text-transform: uppercase
+    color: $black
+    background: transparent
+    border: 0
+    padding: 0
+    +background-image-retina('filter-disabled-2', 'png', size)
+    background-repeat: no-repeat
+    background-position-x: 0
+    margin-left: 15px
+    padding-left: 30px
+    margin-bottom: 15px
+    outline: none
+    float: right
+    width: 20%
+    text-align: left
+    line-height: 1.2em
+    +transition(all .3s ease-out)
+
+    &.is-checked
+      +background-image-retina('filter-active-2', 'png', size)
+
+
+.filter-text
+  float: right
+
+  h3,
+  h4
+    line-height: 1
+    margin: 0
+
+    a
+      pointer-events: none
+
+  h3
+    +replace-text-clickable-logo('filter-opzoek.png', 'filter-opzoek', 'png')
+
+  h4
+    +replace-text-clickable-logo('filter-liefst.png', 'filter-liefst', 'png')

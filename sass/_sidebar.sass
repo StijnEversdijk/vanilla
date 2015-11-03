@@ -1,0 +1,151 @@
+.sidebar,
+footer
+
+  .widget
+    margin-bottom: 60px
+    width: 100%
+
+    &.social
+
+      h3
+        margin-bottom: -5px
+
+      p
+        font-size: 12px
+
+      ul
+        padding: 0
+        float: none
+        +flexbox
+        +justify-content(space-between)
+
+        li
+          width: 50px
+          height: 50px
+          margin: 0
+
+    &.over-do
+      +background-image-retina('papier', 'jpg', cover)
+      background-position: center
+      +background-size(cover)
+      padding: 15px 30px 30px
+      margin: 20px 0 60px
+      +transform(rotate(-1deg) skew(-1deg, -.5deg))
+      +box-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.1))
+      font-size: 12px
+
+      .container
+        +transform(rotate(1deg) skew(1deg, .5deg))
+
+      img
+        float: right
+        width: 40%
+        margin: 0 0 10px 10px
+
+      .inline-link
+        text-transform: uppercase
+
+    &.newsletter
+      font-size: 12px
+
+      h3
+        margin-bottom: 10px
+
+      input[type=email],
+      input[type=text]
+        background: #ebebeb
+        border: 0
+        padding: 0 10px
+        line-height: 40px
+        font-size: 12px
+        width: calc(80%)
+        margin-bottom: 1em
+
+      input[type=submit]
+        position: relative
+        top: 3px
+        background-color: transparent
+        +background-image-retina('knop', 'png', contain)
+        background-repeat: no-repeat
+        background-position: center
+        width: 112px
+        padding: 15px 20px
+        border: 0
+        text-transform: uppercase
+        font-size: 14px
+
+
+    &.agenda
+
+      .items
+        +flexbox
+        +justify-content(space-between)
+        +flex-wrap(wrap)
+
+      .agenda-item
+        font-size: 12px
+        width: calc(50% - 20px)
+        margin-bottom: 20px
+
+        .featured-image
+          background: url(../img/post.jpg)
+          +background-size(cover)
+          width: 100%
+          height: 120px
+
+        ul
+          padding: 0
+          margin: 0
+
+          li
+            list-style: none
+
+        h5
+          +multiline-text-with-ellipsis(16, 1, 2)
+          margin: 10px 0 0
+
+        .duration
+          font-weight: bold
+
+    &.ig-feed
+
+      .images
+        +flexbox
+        +justify-content(space-between)
+        +flex-wrap(wrap)
+        margin-top: 18px
+
+        div
+          width: calc(100%/3 - 10px)
+          // margin-bottom: 20px
+
+      img
+        width: 100%
+        height: auto
+
+.sidebar
+  width: 36.36363636%
+  float: left
+
+  .ig-feed
+    +background-image-retina('papier', 'jpg', cover)
+    background-position: center
+    +background-size(cover)
+    padding: 5px 30px 40px
+    margin: 20px 0 60px
+    +transform(rotate(-1deg) skew(-1deg, -.5deg))
+    +box-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.1))
+    font-size: 12px
+
+    .container
+      +transform(rotate(1deg) skew(1deg, .5deg))
+
+
+::-webkit-input-placeholder
+  font-size: 16px
+
+::-moz-placeholder  /* Firefox 19+ */
+  font-size: 16px
+
+\:-ms-input-placeholder
+  font-size: 16px

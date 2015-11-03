@@ -1,0 +1,42 @@
++breakpoint(xl)
+
+  .button-group button
+    width: 30%
+
++breakpoint(768)
+
+  .archive
+
+    .isotope
+      width: 100%
+
+    .company
+      width: calc(100%/2 - 10px)
+      margin-right: 10px
+
+      &:nth-of-type(2n)
+        margin-left: 10px
+        margin-right: 0
+
+  .button-group,
+  .filter-text
+    width: 100%
+    float: none
+
+  .button-group
+
+    button
+      margin-left: 0
+      margin-right: 15px
+      float: left
+
+  .filter-text
+
+    h3,
+    h4
+      margin-bottom: 2em
+
++breakpoint(m)
+
+  .button-group button
+    width: calc(50% - 15px)

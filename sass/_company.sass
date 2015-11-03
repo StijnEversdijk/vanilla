@@ -1,0 +1,164 @@
+.single-spot
+
+  .body
+    margin-top: 40px
+
+    .inner
+      overflow: visible
+
+      &.dordt-design
+
+        .sidebar
+          margin-top: 20px
+
+  .masthead
+    position: relative
+
+    h2
+      position: absolute
+      bottom: 0
+      left: 0
+      right: auto
+      margin-bottom: 40px
+      color: $orange
+      padding: 12px
+      +background-image-retina('papier', 'jpg', cover)
+      background-position: center
+      +background-size(cover)
+      line-height: 1
+      text-transform: none
+
+  .main
+    width: calc(80% - 120px)
+
+  .sidebar
+    width: calc(20% + 120px)
+    position: relative
+    margin-top: -200px
+
+    h3,
+    p
+      margin: 0
+
+    p,
+    table,
+    a
+      font-size: 12px
+
+    table
+      width: 100%
+
+    h3
+      margin-bottom: 0px
+
+    div
+      margin-bottom: 2em
+      margin-left: 60px
+
+    .texture
+      +background-image-retina('papier', 'jpg', cover)
+      background-position: center
+      +background-size(cover)
+      padding: 30px 30px 5px 60px
+      margin-bottom: 35px
+
+      div
+        margin-left: 0
+
+    .skewed
+      +transform(rotate(-1deg) skew(-1deg, -.5deg))
+
+      div
+        +transform(rotate(1deg) skew(1deg, .5deg))
+
+    .drop-shadow
+      +box-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.1))
+
+    .social ul
+      padding: 10px 0 0 0
+
+      li
+
+        &.twitter
+          +background-image-retina('share-icons/share_tw', 'png','contain')
+        &.foursquare
+          +background-image-retina('share-icons/share_fs', 'png','contain')
+        &.pinterest
+          +background-image-retina('share-icons/share_pin', 'png','contain')
+        &.instagram
+          +background-image-retina('share-icons/share_ig', 'png','contain')
+
+    .website a,
+    .email a
+      border-bottom: 1px solid rgba($black, 0.4)
+
+.image-gallery
+  position: relative
+  top: 40px
+  clear: both
+  +flexbox
+  +flex-wrap(wrap)
+  max-width: 1120px
+  width: calc(78.57142857% + 20px)
+  margin: 0 auto
+
+  .image
+    height: 200px
+    // margin-bottom: 20px
+    margin: 0 10px 20px
+    +background-size(cover)
+    background-position: center
+
+    &:hover
+      cursor: pointer
+
+    &.col_1
+      width: calc(100%/4 - 20px)
+
+    &.col_2
+      width: calc(100%/2 - 20px)
+
+    &.col_3
+      width: calc(100%/4*3 - 20px)
+
+    &.col_4
+      width: calc(100%)
+
+#imageviewer
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(white, 0.95)
+  z-index: 999
+  +opacity(0)
+  +transition(all .2s ease-out)
+
+  &.visible
+    +opacity(1)
+
+    img
+      +opacity(1)
+
+  .image-wrap
+    +box-sizing(border-box)
+    width: 100%
+    height: 100%
+    padding: 7% 10%
+    overflow: hidden
+
+  img
+    max-height: 100%
+    max-width: 100%
+    margin: 0 auto
+    display: block
+    +opacity(0)
+    +transition(all .2s ease-out ease-out)
+
+.maps
+  margin-top: 60px
+
+.acf-map
+  width: 100%
+  height: 400px

@@ -1,0 +1,133 @@
+%pompiere
+  font-family: 'Pompiere', sans-serif
+  font-weight: 300
+
+%source-sans
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: 300
+
+body,
+.entry-summary,
+.tribe-events-single-event-description,
+.tribe-events-meta-group
+  @extend %source-sans
+  -webkit-font-smoothing: antialiased
+  font-size: 16px
+  line-height: 22px
+
+h1,
+h2,
+h3,
+h4,
+h5
+  line-height: 1.2em
+
+h2,
+h3,
+h4,
+input[type=text],
+input[type=email],
+#tribe-events-content,
+.page-numbers li a,
+.page-numbers li span
+  @extend %pompiere
+
+h2
+  font-size: 36px
+  text-transform: uppercase
+
+h3,
+h3 a
+  font-size: 24px
+  color: $orange
+
+h4,
+.category a,
+.button-group
+  @extend %pompiere
+  font-size: 16px
+  color: $grey
+  text-transform: uppercase
+
+h5,
+h5 a,
+input[type=text],
+input[type=email],
+.agenda-filter li a
+  @extend %pompiere
+  font-size: 16px
+  color: $orange
+
+a
+  text-decoration: none
+  color: $black
+
+  &.inline-link
+    @extend %pompiere
+    border-bottom: 1px solid $orange
+    color: $orange
+
+    &:hover
+      border-bottom: 0
+
+  &.lees-meer
+    text-transform: uppercase
+
+  &.image-article-link
+    display: block
+    width: 100%
+    height: 100%
+
+p
+
+  a
+    @extend %pompiere
+    border-bottom: 1px solid $orange
+    color: $orange
+    font-size: 19px
+
+    &:hover
+      border-bottom: 0
+
+input[type=submit],
+.mail
+  @extend %pompiere
+  color: white
+
+nav
+  @extend %pompiere
+
+  a
+    color: white
+
+  &.categories-nav
+    text-transform: uppercase
+    font-size: 24px
+
+  &.main-nav
+    font-size: 20px
+
+.single-post article
+
+
+  h1,
+  h2
+    @extend %pompiere
+    font-size: initial
+
+  h1
+    font-size: 3.998em
+  h2
+    font-size: 2.827em
+
+  h4,
+  h5,
+  h6
+    @extend %source-sans
+    text-transform: none
+    font-weight: bold
+    margin-bottom: 0
+    margin-top: 1em
+
+  h6
+    font-size: 1em

@@ -1,0 +1,28 @@
+footer
+  background: #4a4a4a
+  margin-top: 80px
+
+  .inner
+    +flexbox
+
+  .widget
+    width: calc(100%/3)
+    padding: 40px 40px 0 40px
+
+    &.newsletter
+
+      input[type=submit]
+        +background-image-retina('knop_donker', 'png', contain)
+    h3
+      color: white
+      margin-bottom: 10px
+
+    &:first-of-type
+      padding: 40px 40px 0 0
+
+    &:last-of-type
+      padding: 40px 0 0 40px
+
+  .newsletter,
+  .social
+    color: #ccc

@@ -1,0 +1,67 @@
++breakpoint(xl)
+
+  .single-spot
+
+    .body
+
+      .inner
+        max-width: 600px
+        width: 60%
+        margin: 0 auto
+
+        .main
+          width: 100%
+          padding: 0
+
+    .sidebar
+      margin-top: 0
+      width: 100%
+
+      .texture
+        +flexbox
+        +justify-content(space-around)
+
+      td
+        padding-right: 10px
+
+      .website,
+      .email,
+      .social
+        width: calc(100%/3)
+        float: left
+        margin-left: 0
+
++breakpoint(768)
+
+  .single-spot
+
+    .body
+
+      .inner
+        width: 90%
+        max-width: 100%
+
+  .image-gallery
+    width: calc(90% + 20px)
+
+    .image
+      height: 100px
+
++breakpoint(m)
+
+  .single-spot
+
+    .sidebar
+
+      .texture
+        display: block
+
+        div
+          width: 100%
+
+      .website,
+      .email,
+      .social
+        width: 100%
+        float: none
+        margin-left: 0

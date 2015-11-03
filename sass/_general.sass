@@ -1,0 +1,76 @@
+body
+  +background-image-retina('lightpaperfibers', 'png', repeat)
+
+*
+  +box-sizing(border-box)
+
+.inner
+  max-width: 1100px
+  width: 78.57142857%
+  margin: 0 auto
+
+  .body &
+    +clearfix
+
+.body
+  margin-top: 40px
+
+  .admin-bar &
+    margin-top: 0
+
+.main
+  width: calc(100% - 36.36363636%)
+  padding-right: 100px
+  float: left
+
+.social
+
+  h4
+    float: left
+
+  .ssba
+    float: left
+    margin: 5px 0 0 5px
+
+    img
+      +transition(transform .3s ease-in-out)
+
+      &:hover
+        +rotate(-360deg)
+
+  ul
+    padding: 15px 0 0 15px
+    margin: 0
+    float: left
+
+    li
+      list-style: none
+      +background-image-retina('share-icons/share_fb', 'png', cover)
+      // +background-size(cover)
+      width: 30px
+      height: 30px
+      margin: 0 15px 0 0
+      display: inline-block
+      background-repeat: no-repeat
+      +transition(transform .3s ease-in-out)
+
+      &:nth-of-type(2)
+        +background-image-retina('share-icons/share_tw', 'png',cover)
+
+      &:nth-of-type(3)
+        +background-image-retina('share-icons/share_ig', 'png',cover)
+
+      &:nth-of-type(4)
+        +background-image-retina('share-icons/share_pin', 'png',cover)
+
+      &:nth-of-type(5)
+        +background-image-retina('share-icons/share_fs', 'png',cover)
+        margin: 0
+
+      &:hover
+        +rotate(-360deg)
+
+      a
+        +hide-text
+        display: block
+        height: 100%

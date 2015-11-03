@@ -1,0 +1,36 @@
+.masthead
+  width: 100%
+  background-image: url(../img/masthead.jpg)
+  +background-size(cover)
+  margin-bottom: 20px
+
+  &.big
+    height: 300px
+
+  &.huge
+    height: 400px
+
+  &.small
+    height: 240px
+
+    &.search
+      background-image: url(../img/mastheads/zoeken.jpg)
+
+  .inner
+    position: relative
+    height: 100%
+
+    h2
+      margin: 0
+      position: absolute
+      right: 0
+      bottom: 0
+      margin-bottom: 40px
+      color: $orange
+      padding: 12px
+      +background-image-retina('papier', 'jpg', cover)
+      background-position: center
+      +background-size(cover)
+      line-height: 1
+      text-transform: uppercase
+      // +translateY(-50%)

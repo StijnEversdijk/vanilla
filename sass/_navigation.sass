@@ -1,0 +1,84 @@
+.navigation
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  +background-image-retina(nav-bg, png, cover)
+  z-index: 2
+
+  .hamburger
+    display: none
+
+  .admin-bar &
+    top: 32px
+
+  .inner
+    position: relative
+
+  h1
+    +replace-text-clickable-logo("logo.png", logo, png)
+    position: absolute
+    left: 0
+    top: 21px
+    margin: 0
+    +transition(all .2s ease-out)
+
+    &:hover
+      +rotate(10deg)
+
+  nav
+    // width: calc(50% - 100px)
+    float: left
+
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+      display: inline-block
+
+      li
+        display: inline-block
+        line-height: 100px
+        margin: 0 15px
+
+        &:first-of-type
+          margin-left: 0
+
+        &:last-of-type
+          margin-right: 0
+
+        a
+          padding-bottom: 2px
+
+          &:after
+            position: relative
+            top: -37px
+            content: ""
+            width: 0
+            height: 1px
+            display: block
+            background: white
+            +transition(all .2s ease-out)
+
+          &:hover
+
+            &:after
+              width: 100%
+              +transition(all .2s ease-out)
+
+    &.categories-nav
+      position: relative
+      left: 177px
+
+      ul
+        +flexbox
+
+    &.main-nav
+      float: right
+      width: auto
+
+      li
+
+        &:last-of-type
+          +replace-text-clickable-logo('search.png', search, png)
+          background-repeat: no-repeat

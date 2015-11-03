@@ -1,0 +1,95 @@
++breakpoint(xxxl)
+
+  .navigation
+
+    nav
+
+      &.main-nav,
+      &.categories-nav
+        float: none
+        width: calc(100% - 180px)
+
+        ul
+
+          li
+            line-height: 44px
+            font-size: 16px
+
+            a
+              &:after
+                top: -13px
+
+      &.main-nav
+        position: relative
+        left: 177px
+        padding-bottom: 20px
+
+      &.categories-nav
+        padding-top: 10px
+
++breakpoint(l)
+
+  .navigation
+    +background-image-retina(paint, png, cover)
+    padding-bottom: 60px
+    +translateY(-380px)
+    +transition(all .3s ease-out)
+
+    &.toggle
+      +translateY(0)
+
+      nav
+        +opacity(1)
+
+    .inner
+      +clearfix
+
+    h1
+      position: static
+      margin: 0 auto
+      margin-bottom: 40px
+
+    nav
+      +opacity(0)
+      +transition(opacity .3s .3s ease-out)
+
+
+      ul
+
+        li
+          display: block
+          margin: 0
+          width: 100%
+          text-align: center
+
+      &.main-nav,
+      &.categories-nav
+        left: 0
+        position: static
+        float: left
+        padding: 0
+        width: 50%
+
+        ul
+          display: block
+
+          li
+
+            &:last-of-type
+              width: auto
+              height: auto
+
+    .hamburger
+      display: block
+      position: absolute
+      left: 50%
+      +translateX(-50%)
+
+      &:hover
+        cursor: pointer
+
+      div
+        width: 20px
+        height: 3px
+        background: white
+        margin: 4px 0
